@@ -81,22 +81,122 @@ namespace BA_C_sharp_9__try_catch__brak_continue__arrays___
 
             // --------------------------------------
 
-            string[] cars = { "toyota", "bmw", "mercedes", "jeep", "ford", "honda", "suzuki"};
+            //string[] cars = { "toyota", "bmw", "mercedes", "jeep", "ford", "honda", "suzuki"};
 
-            for (int i = 0; i < cars.Length; i++)
+            //for (int i = 0; i < cars.Length; i++)
+            //{
+            //    Console.WriteLine("Car brand: \t" + cars[i] + "\tindex no:\t" + i);
+            //}
+
+            //Console.WriteLine("----------------");
+
+            //foreach (var x in cars)
+            //{
+            //    Console.WriteLine(x); // "x" isaret cubugu gibi, array deki tüm degerleri sirayla  gezer
+            //}
+
+            // --------------------------------------
+
+            //string[] cars = { "toyota", "bmw", "mercedes", "jeep", "ford", "honda", "suzuki" };
+
+            //foreach (var x in cars)
+            //{
+            //    if (x.Contains("bmw")) // "x" "bmw" yi iceriyormu diye sorgular
+            //    {
+            //        Console.WriteLine("Wanted car found");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("There is no : " + x);
+            //    }
+            //}
+
+            // --------------------------------------
+
+            //string[] cars = { "toyota", "bmw", "mercedes", "jeep", "ford", "honda", "suzuki" };
+
+            //Array.Sort(cars);
+
+            //foreach (var x in cars)
+            //{
+            //    Console.WriteLine(x);
+            //}
+
+            // --------------------------------------
+
+            // ÖRNEK SORU: Dizinin eleman sayisini kullanici belirleyecek. Bu elemanlara dinamik olarak atama yapilacak. Bu sekilde dinamik bir array olusturacagiz.
+
+
+            //int mevcut = 0;
+
+            //Console.WriteLine("Sinif mevcudunu giriniz: ");
+            //mevcut = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("-------------------");
+
+            //string[] student = new string[mevcut];
+
+            //for (int i = 0; i < mevcut; i++) // döngüyü sinif mevcudu kadar kurduk.
+            //{
+            //    Console.Write("Ögrenci adini giriniz");
+            //    student[i] = Console.ReadLine();
+            //    Console.WriteLine("----------------");
+            //}
+
+            //Console.WriteLine("----------------");
+
+            //foreach (var x in student)
+            //{
+            //    Console.WriteLine(x);
+            //}
+            // --------------------------------------
+
+            //string[] günler = new string[7];
+
+            //günler[0] = "Pazartesi";
+            //günler[1] = "Sali";
+            //günler[2] = "Carsamba";
+            //günler[3] = "Persembe";
+            //günler[4] = "Cuma";
+            //günler[5] = "Cumartesi";
+            //günler[6] = "Pazar";
+
+            //foreach (var x in günler)
+            //{
+            //    Console.WriteLine(x);
+            //}
+
+            // -----------------------
+
+            //string[] günler = new string[7];
+
+            //for (int i = 0; i < günler.Length; i++)
+            //{
+            //    Console.Write((i+1) + "." + "Günü Giriniz: ");
+            //    günler[i] = Console.ReadLine();
+            //    Console.WriteLine("------------");
+            //}
+
+            //foreach (var gün in günler)
+            //{
+            //    Console.WriteLine(gün);
+            //}
+
+            // -------------------------
+
+            string[] aylar = new string[12];
+
+            for (int i = 0; i < aylar.Length; i++)
             {
-                Console.WriteLine("Car brand:" + cars[i] + "index no" + i + "\n");
+                Console.Write((i + 1) + "." + "Ayi Giriniz: ");
+                aylar[i] = Console.ReadLine();
+                Console.WriteLine("------------");
             }
 
-
-
-
-
-
-
-
-
-
+            foreach (var ay in aylar)
+            {
+                Console.WriteLine(ay);
+            }
 
         }
     }
